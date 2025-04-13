@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Installation Report</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 30px;
+    }
+    .report-container {
+      background: #fff;
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
+      border: 2px solid #111010;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .logo {
+      float: left;
+      font-size: 48px;
+      font-weight: bold;
+      color: #222;
+    }
+    .clear {
+      clear: both;
+    }
+    .section {
+      margin-top: 20px;
+    }
+    .two-col {
+      display: flex;
+      justify-content: space-between;
+    }
+    .two-col div {
+      width: 48%;
+    }
+    .editable {
+      display: inline-block;
+      border-bottom: 1px dashed #fffcfc;
+      padding: 3px;
+      min-width: 120px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      border: 1px solid #666;
+      padding: 6px;
+      text-align: left;
+    }
+    .footer {
+      margin-top: 30px;
+    }
+    .btn {
+      margin-top: 20px;
+      background: #007BFF;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div class="report-container" id="report">
+  <div class="logo">bpf</div>
+  <h2>Oly Edge Foot Fall Counter for MAX<br>Installation Report</h2><br>
+  <div class="clear"></div>
+
+  <div class="two-col">
+    <div>
+      <label><strong>Client:</strong></label><br><span class="editable" contenteditable="true">
+      Lifestyle International Pvt Ltd (Max Retail)<br>
+      D. No: 16-15/3/P/5F1-B1001, Unit No: 5F-85-88,<br>
+      Sarath City Capital Mall, Kondapur, Hyderabad, TS, 500084<br><br></span>
+      <label><strong>GST NO:</strong> 36AAACL2937J1ZF<br></label>
+      <strong>Delivery Location:</strong> <span class="editable" contenteditable="true">BS-SARATHCITY-HYDERABAD</span><br>
+      <strong>PO No:</strong> <span class="editable" contenteditable="true">2022042368</span><br>
+      <strong>PO Date:</strong> <span class="editable" contenteditable="true">07-FEB-2025</span>
+    </div>
+    <div>
+      <strong>Supplier:</strong>
+      Bipolar Factory Private Limited<br>
+      Old No: 25 J, New No: 57/9, IB Apartment,<br>
+      Chinnamimal Street, Kuppakonam Pudur, Coimbatore, Tamilnadu - 641038<br><br>
+      <strong>GST NO:</strong> 33AAMCB1860C1ZZ<br>
+      <strong>Agreement No:</strong> IN-KA82195048876345W
+    </div>
+  </div>
+
+  <div class="section">
+    <h3>Device Setup Details</h3>
+    <table>
+      <tr>
+        <th colspan="5">Edge Device</th>
+      </tr>
+      <tr>
+        <td><strong>Brand</strong></td>
+        <td><strong>Quantity</strong></td>
+        <td><strong>Serial No</strong></td>
+        <td><strong>Adapter</strong></td>
+      </tr>
+      <tr>
+        <td contenteditable="true">NVIDIA</td>
+        <td contenteditable="true">1 Nos</td>
+        <td contenteditable="true">1432473463582</td>
+        <td contenteditable="true">1 Nos</td>
+      </tr>
+    </table>
+
+    <table>
+      <tr>
+        <th colspan="5">Router</th>
+      </tr>
+      <tr>
+        <td><strong>Brand</strong></td>
+        <td><strong>Quantity</strong></td>
+        <td><strong>Serial No</strong></td>
+        <td><strong>Adapter</strong></td>
+      </tr>
+      <tr>
+        <td contenteditable="true">TP Link</td>
+        <td contenteditable="true">1 Nos</td>
+        <td contenteditable="true">236442000043</td>
+        <td contenteditable="true">1 Nos</td>
+      </tr>
+    </table>
+
+    <table>
+      <tr>
+        <th colspan="2">Additional Accessories</th>
+      </tr>
+      <tr>
+        <td><strong>Power Extension Socket</strong></td>
+        <td><span class="editable" contenteditable="true">1 Nos</span></td>
+      </tr>
+      <tr>
+        <td><strong>2U Rack</strong></td>
+        <td><span class="editable" contenteditable="true">1 Nos</span></td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <strong>Installation Confirmation:</strong><br>
+    The above mentioned devices have been installed in the store premises.
+  </div>
+
+  <div class="footer">
+    <p><strong>BPF Contact Name:</strong> <span class="editable" contenteditable="true"></span></p>
+    <p><strong>Contact No:</strong> <span class="editable" contenteditable="true"></span></p>
+    <p><strong>Store Manager Name:</strong> <span class="editable" contenteditable="true"></span></p>
+    <p><strong>Signature:</strong> ______________________</p>
+  </div>
+
+  <div class="section">
+    <strong>Store Stamp</strong><br><br><br>
+    <p contenteditable="true">Device installation has been done. Camera repositioning pending due to Maintenance Team's approval.</p>
+  </div>
+  <div class="section">
+    <h3>Installation Images</h3>
+    <input type="file" id="imageInput" accept="image/*" multiple>
+    <div id="imagePreview" style="margin-top: 10px; display: flex; gap: 10px; flex-wrap: wrap;"></div>
+  </div>
+</div>
+  
+
+<button class="btn" onclick="downloadPDF()">Download PDF</button>
+
+<script>
+    function downloadPDF() {
+      const element = document.getElementById('report');
+      html2pdf().from(element).save('MAX_Installation_Report.pdf');
+    }
+  
+    // Image Upload + Preview
+    document.getElementById('imageInput').addEventListener('change', function (e) {
+      const preview = document.getElementById('imagePreview');
+      preview.innerHTML = '';
+      [...e.target.files].forEach(file => {
+        const reader = new FileReader();
+        reader.onload = function (event) {
+          const img = document.createElement('img');
+          img.src = event.target.result;
+          img.style.width = '200px';
+          img.style.border = '1px solid #ccc';
+          img.style.padding = '5px';
+          img.style.borderRadius = '8px';
+          preview.appendChild(img);
+        };
+        reader.readAsDataURL(file);
+      });
+    });
+  </script>
+
+    <script>
+    function downloadPDF() {
+        const element = document.getElementById('report');
+        html2pdf().from(element).save('MAX_Installation_Report.pdf');
+    }
+    </script>
+
+</body>
+</html>
